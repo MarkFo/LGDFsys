@@ -196,7 +196,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 12);
             this.label6.TabIndex = 12;
-            this.label6.Text = "当前版本:1.23.3(2018.6.23)";
+            this.label6.Text = "当前版本:1.23.4(2018.6.24)";
             // 
             // Login
             // 
