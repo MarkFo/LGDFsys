@@ -1,0 +1,63 @@
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.csprojResolveAssemblyReference.cache
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.Login.resources
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.Properties.Resources.resources
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.csproj.GenerateResource.Cache
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.exe
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.pdb
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.exe
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.pdb
+G:\Visual Studio 2013\C#Project\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.Register.resources
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.pdb
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csprojResolveAssemblyReference.cache
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Login.resources
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Properties.Resources.resources
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Register.resources
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.GenerateResource.cache
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.CoreCompileInputs.cache
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.pdb
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Formpad.resources
+D:\d盘日期文档\日期\2018\0324vb.net\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Fpad.resources
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.pdb
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csprojResolveAssemblyReference.cache
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Login.resources
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Properties.Resources.resources
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Register.resources
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Fpad.resources
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.GenerateResource.cache
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.CoreCompileInputs.cache
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0326c#\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.pdb
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.exe
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\bin\Debug\LoginDatabase.pdb
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csprojResolveAssemblyReference.cache
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Login.resources
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Properties.Resources.resources
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Register.resources
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.Fpad.resources
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.GenerateResource.cache
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.csproj.CoreCompileInputs.cache
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.exe
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.pdb
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.跳转.resources
+D:\Cprogram\Homework-of-Database-master\Homework-of-Database-master\LoginDatabase\obj\Debug\LoginDatabase.快捷报工.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.csprojResolveAssemblyReference.cache
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.Login.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.Properties.Resources.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.Register.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.Fpad.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.快捷报工.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.跳转.resources
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.csproj.GenerateResource.cache
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.csproj.CoreCompileInputs.cache
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\obj\Debug\LoginDatabase.pdb
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\bin\Debug\LoginDatabase.exe
+D:\d盘日期文档\日期\2018\0326c#\LGD2\LoginDatabase\bin\Debug\LoginDatabase.pdb

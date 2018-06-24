@@ -1,0 +1,6 @@
+http://2510.cn.gs/ActiveX/
+2,3,0,38
+http://2510.cn.gs/logindatabase/
+logindatabaseScript.Cab
+b0e4-18130
+WEBPROG

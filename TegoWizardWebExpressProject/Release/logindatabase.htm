@@ -1,0 +1,104 @@
+<!Automatically generated with the TegoSoft TegoWeb Express Wizard. Version: 6.7>
+<!Generated on 2018/3/27 16:02:49>
+
+<HTML>
+<HEAD>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+Sub window_onLoad()
+
+' --- DO NOT MODIFY THE FOLLOWING LINES
+If DisplaySetSecurityMsgIfNeeded = True Then Exit Sub
+call TegoLoader1.DefineCustomEvent("GOTO URL")
+call TegoLoader1.DefineCustomEvent("PREVIOUS PAGE")
+' --- DO NOT MODIFY THE PRECEDING LINES
+ 
+' --- DO NOT MODIFY THE FOLLOWING LINE
+Call TegoLoader1.SetCurrentUrl(window.location.href) : call TegoLoader1.RunScript("logindatabaseScript.Cab")
+' --- DO NOT MODIFY THE PRECEDING LINE
+ 
+End Sub
+
+Sub window_onUnload()
+
+Dim result
+
+On Error Resume Next
+result = False
+result = TegoLoader1.Test1()
+If result = False Then Exit Sub
+Call TegoLoader1.CloseScript
+
+End Sub
+
+Function DisplaySetSecurityMsgIfNeeded()
+
+Dim result
+Dim msg
+Dim Q
+Q=""""
+On Error Resume Next
+result = False
+result = TegoLoader1.Test1()
+If result = False Then
+   DisplaySetSecurityMsgIfNeeded = True
+   Exit Function
+End If
+DisplaySetSecurityMsgIfNeeded = False
+
+End Function
+-->
+    </SCRIPT>
+<TITLE>The logindatabase.exe Program Page</TITLE>
+</HEAD>
+<BODY>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+document.writeLn ("PLEASE WAIT...") 
+-->
+    </SCRIPT>
+<br>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+Sub TegoLoader1_CustomEvent(EventName)
+
+' --- DO NOT MODIFY THE FOLLOWING LINES
+If EventName = "GOTO URL" Then
+   Parent.location.href = TegoLoader1.GetCustomEventPara()
+ElseIf EventName = "PREVIOUS PAGE" Then
+   Call window.history.back(1)
+End If
+' --- DO NOT MODIFY THE PRECEDING LINES
+
+End Sub
+-->
+    </SCRIPT>
+    <OBJECT ID="TegoLoader1" WIDTH=41 HEIGHT=39
+     CLASSID="CLSID:1C960AA3-FAEE-11D0-9262-00A0243D2412"
+     CODEBASE="http://2510.cn.gs/ActiveX/TegoLoad.cab#Version=2,3,0,38">
+        <PARAM NAME="_Version" VALUE="65536">
+        <PARAM NAME="_ExtentX" VALUE="1085">
+        <PARAM NAME="_ExtentY" VALUE="1005">
+        <PARAM NAME="_StockProps" VALUE="0">
+
+Your browser does not support ActiveX based pages.
+
+    </OBJECT>
+
+<hr>
+
+<p><small><font face="Arial">
+If your browser is set to view ActiveX pages, please wait while this web program loads and runs itself...
+<br>
+
+Otherwise, you can execute this Web program manually as follows:</font></small>
+<ul>
+  <li><small><font face="Arial">Download this <a
+    href="logindatabaseWebProg.exe">logindatabaseWebProg.exe</a>
+    file (approximately 30 KBytes) and save it to any directory on your hard drive.</font></small></li>
+  <li><small><font face="Arial">Execute the&nbsp; <b>logindatabaseWebProg.exe </b>file that you downloaded.</font></small></li>
+</ul>
+
+
+</BODY>
+</HTML>

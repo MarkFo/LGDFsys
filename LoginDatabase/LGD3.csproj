@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94F416EC-EBE6-41C0-9214-108638265078}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGD</RootNamespace>
+    <AssemblyName>威孚快捷平台</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\d盘日期文档\日期\2018\0326c#\Release\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>51</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C40B7B640993DDE54FB0919B886D801527D36A11</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LGD3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>资源文件\ooopic_1522397519.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\bom管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bom管理.Designer.cs">
+      <DependentUpon>bom管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common全局变量.cs" />
+    <Compile Include="forms\bom管理_form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bom管理_form1.Designer.cs">
+      <DependentUpon>bom管理_form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\bom管理_form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bom管理_form2.Designer.cs">
+      <DependentUpon>bom管理_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\bom管理_form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bom管理_form3.Designer.cs">
+      <DependentUpon>bom管理_form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form3.Designer.cs">
+      <DependentUpon>生产计划_form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\MRP采购需求.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\MRP采购需求.Designer.cs">
+      <DependentUpon>MRP采购需求.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\notice.Designer.cs">
+      <DependentUpon>notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form4.Designer.cs">
+      <DependentUpon>生产计划_form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form5.Designer.cs">
+      <DependentUpon>生产计划_form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form6.Designer.cs">
+      <DependentUpon>生产计划_form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Fpad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Fpad.Designer.cs">
+      <DependentUpon>Fpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\QRcoderes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\QRcoderes.Designer.cs">
+      <DependentUpon>QRcoderes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlhelper\OracleHelper.cs" />
+    <Compile Include="sqlhelper\SqlHelper.cs" />
+    <Compile Include="forms\ts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ts.Designer.cs">
+      <DependentUpon>ts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\人员选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\人员选择.Designer.cs">
+      <DependentUpon>人员选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\工资查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\工资查询.Designer.cs">
+      <DependentUpon>工资查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\快捷报工.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\快捷报工.Designer.cs">
+      <DependentUpon>快捷报工.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\批量报工.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\批量报工.Designer.cs">
+      <DependentUpon>批量报工.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\杂工记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\杂工记录.Designer.cs">
+      <DependentUpon>杂工记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划.Designer.cs">
+      <DependentUpon>生产计划.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form1.Designer.cs">
+      <DependentUpon>生产计划_form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\生产计划\生产计划_form2.Designer.cs">
+      <DependentUpon>生产计划_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\自动挂号调整GXY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\自动挂号调整GXY.Designer.cs">
+      <DependentUpon>自动挂号调整GXY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\自动挂号调整WF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\自动挂号调整WF.Designer.cs">
+      <DependentUpon>自动挂号调整WF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\自动挂号调整_form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\自动挂号调整_form1.Designer.cs">
+      <DependentUpon>自动挂号调整_form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\设备维修.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\设备维修.Designer.cs">
+      <DependentUpon>设备维修.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\跳转.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\跳转.Designer.cs">
+      <DependentUpon>跳转.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\领料确认.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\领料确认.Designer.cs">
+      <DependentUpon>领料确认.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlhelper\SqlServerHelper.cs" />
+    <Compile Include="外部引用插件\RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="外部引用插件\RowMergeView.designer.cs">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forms\bom管理.resx">
+      <DependentUpon>bom管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\bom管理_form1.resx">
+      <DependentUpon>bom管理_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\bom管理_form2.resx">
+      <DependentUpon>bom管理_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\bom管理_form3.resx">
+      <DependentUpon>bom管理_form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form3.resx">
+      <DependentUpon>生产计划_form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\MRP采购需求.resx">
+      <DependentUpon>MRP采购需求.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\notice.resx">
+      <DependentUpon>notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form4.resx">
+      <DependentUpon>生产计划_form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form5.resx">
+      <DependentUpon>生产计划_form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form6.resx">
+      <DependentUpon>生产计划_form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Fpad.resx">
+      <DependentUpon>Fpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\QRcoderes.resx">
+      <DependentUpon>QRcoderes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ts.resx">
+      <DependentUpon>ts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\人员选择.resx">
+      <DependentUpon>人员选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\工资查询.resx">
+      <DependentUpon>工资查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\快捷报工.resx">
+      <DependentUpon>快捷报工.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\批量报工.resx">
+      <DependentUpon>批量报工.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\杂工记录.resx">
+      <DependentUpon>杂工记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划.resx">
+      <DependentUpon>生产计划.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form1.resx">
+      <DependentUpon>生产计划_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\生产计划\生产计划_form2.resx">
+      <DependentUpon>生产计划_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\自动挂号调整GXY.resx">
+      <DependentUpon>自动挂号调整GXY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\自动挂号调整WF.resx">
+      <DependentUpon>自动挂号调整WF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\自动挂号调整_form1.resx">
+      <DependentUpon>自动挂号调整_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\设备维修.resx">
+      <DependentUpon>设备维修.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\跳转.resx">
+      <DependentUpon>跳转.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\领料确认.resx">
+      <DependentUpon>领料确认.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="外部引用插件\RowMergeView.resx">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LGD3_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbackground2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="资源文件\bitbug_favicon %282%29.ico" />
+    <Content Include="资源文件\ooopic_1522397519.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
