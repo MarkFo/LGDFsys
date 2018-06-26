@@ -60,11 +60,11 @@ namespace LGD
             this.Close();
         }
 
-        /*//跳转窗体右上关闭按钮，彻底退出
+        //跳转窗体右上关闭按钮，彻底退出
         private void 跳转_FormClosing(object sender, FormClosingEventArgs e)
         {
-            System.Environment.Exit(0);
-        }*/
+         Environment.Exit(Environment.ExitCode);
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -302,6 +302,16 @@ namespace LGD
             else
             {
                 button18.Visible = false;
+            }
+
+            //判断有权限杂工派工，按钮button18
+            if (label5.Text == "ss" || label5.Text == "00025" || label5.Text == "00031" || label5.Text == "00376" || label5.Text == "00330" || label5.Text == "00332" || label5.Text == "00062" || label5.Text == "00067" || label5.Text == "10018" || label5.Text == "00005")
+            {
+                button2.Visible = true;
+            }
+            else
+            {
+                button2.Visible = false;
             }
 
 

@@ -442,6 +442,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "快捷平台";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.跳转_FormClosing);
             this.Load += new System.EventHandler(this.跳转_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
