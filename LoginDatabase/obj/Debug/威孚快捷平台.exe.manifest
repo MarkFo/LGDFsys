@@ -4,7 +4,7 @@
   <description asmv2:iconFile="资源文件\ooopic_1522397519.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="威孚快捷平台" version="1.23.4.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="威孚快捷平台" version="1.23.5.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="威孚快捷平台.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="威孚快捷平台.exe" size="585232">
-      <assemblyIdentity name="威孚快捷平台" version="1.23.4.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="威孚快捷平台.exe" size="588816">
+      <assemblyIdentity name="威孚快捷平台" version="1.23.5.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WoDuMd7ljX307zQJZVqzrKx0wh4=</dsig:DigestValue>
+        <dsig:DigestValue>hAWVmxns+io6srURo0rdbA5hVlA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

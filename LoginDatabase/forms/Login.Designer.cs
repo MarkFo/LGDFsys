@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(91, 112);
+            this.label1.Location = new System.Drawing.Point(91, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 0;
@@ -59,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(91, 186);
+            this.label2.Location = new System.Drawing.Point(91, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 25);
             this.label2.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtName.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtName.Location = new System.Drawing.Point(208, 106);
+            this.txtName.Location = new System.Drawing.Point(208, 85);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(182, 40);
@@ -79,7 +79,7 @@
             // 
             this.txtPwd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPwd.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPwd.Location = new System.Drawing.Point(208, 178);
+            this.txtPwd.Location = new System.Drawing.Point(208, 157);
             this.txtPwd.Multiline = true;
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
@@ -116,7 +116,7 @@
             this.register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.register.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.register.Image = ((System.Drawing.Image)(resources.GetObject("register.Image")));
-            this.register.Location = new System.Drawing.Point(510, 114);
+            this.register.Location = new System.Drawing.Point(510, 93);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(62, 21);
             this.register.TabIndex = 6;
@@ -131,7 +131,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(91, 246);
+            this.label3.Location = new System.Drawing.Point(91, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 25);
             this.label3.TabIndex = 7;
@@ -141,7 +141,7 @@
             // 
             this.textCheck.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textCheck.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textCheck.Location = new System.Drawing.Point(208, 240);
+            this.textCheck.Location = new System.Drawing.Point(208, 219);
             this.textCheck.Multiline = true;
             this.textCheck.Name = "textCheck";
             this.textCheck.Size = new System.Drawing.Size(140, 36);
@@ -153,7 +153,7 @@
             this.checkCode.AutoSize = true;
             this.checkCode.BackColor = System.Drawing.Color.Transparent;
             this.checkCode.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkCode.Location = new System.Drawing.Point(392, 243);
+            this.checkCode.Location = new System.Drawing.Point(392, 222);
             this.checkCode.Name = "checkCode";
             this.checkCode.Size = new System.Drawing.Size(158, 29);
             this.checkCode.TabIndex = 2;
@@ -167,7 +167,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(451, 247);
+            this.label4.Location = new System.Drawing.Point(451, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 10;
@@ -196,7 +196,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 12);
             this.label6.TabIndex = 12;
-            this.label6.Text = "当前版本:1.23.4(2018.6.24)";
+            this.label6.Text = "当前版本:1.23.5(2018.6.26)";
             // 
             // Login
             // 

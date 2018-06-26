@@ -25,7 +25,7 @@ namespace LGD
         }*/
         private void 生产计划_Load(object sender, EventArgs e)
         {
-            //计时器开始运行
+            //计时器开始运行，标签闪烁用
             timer1.Interval = 1000;
             timer1.Start();
 

@@ -17,55 +17,18 @@ namespace LGD
         public 杂工记录()
         {
             InitializeComponent();
-            label3.Text = UserInfo.UserName;//引用全局变量username，默认加载时填写
 
-            //开始就将dateTimePicker1加入textBox1，防止录入人员不选
-            textBox1.Text = dateTimePicker1.Value.ToString();
         }
 
         //一.添加按钮
         private void 杂工记录button4_Click(object sender, EventArgs e)
         {
+            textBox1.Text = dateTimePicker1.Value.ToString();
 
-
-            /*
-            SqlConnection con1 = new SqlConnection("Data Source=192.168.1.252;Initial Catalog=cs管理;Persist Security Info=True;User ID=sa;Password=WFGLServer2008");
-            con1.Open();
-            SqlCommand cmd1 = new SqlCommand(string.Format("select Count(*) from additional where [guid] = '" + label4.Text + "' "), con1);
-            if ((int)cmd1.ExecuteScalar() > 0)
-            {
-                MessageBox.Show("已存在，请勿重复记录", "提示");
-                con1.Close();
-            }
-
-
-            else */if (textBox2.Text.Length == 0)
+            if (textBox2.Text.Length == 0 || label10.Text.Length <= 1 || label15.Text.Length <= 1)
             {
                 MessageBox.Show("请补充必要信息！");
             }
-
-
-
-            /*
-            else if 
-                (
-            string coct1 = "Data Source=192.168.1.252;Initial Catalog=cs管理;Persist Security Info=True;User ID=sa;Password=WFGLServer2008";
-            SqlConnection con1 = new SqlConnection(coct1);
-            con1.Open();
-            string myadd = "insert into [codelist] (name,code,datetime,pdn,time) values ('" + label7.Text + "','" + label3.Text + "','" + label5.Text + "','" + label4.Text + "','" + label8.Text + "')";
-
-            SqlCommand cmd1 = new SqlCommand(myadd, con1);
-            
-
-            cmd1.ExecuteNonQuery();
-
-            )
-            {
-             MessageBox.Show("已报工！");
-
-            }
-            */
-
             else
             {
                 //重新计算一遍，防止手工没点计算
@@ -94,21 +57,11 @@ namespace LGD
                 //重新执行dgrid1查询
                 button7_Click_1(sender, e);
 
-
-                /*
-                string coct1 = "Data Source=192.168.1.253;Initial Catalog=WEIFU;Persist Security Info=True;User ID=sa;Password=Server08";
-                SqlConnection con1 = new SqlConnection(coct1);
-                con1.Open();
-                string sql = string.Format("update workers set Wdone='{0}',Wpaid= '{0}' ,Wdays ='{0}'", a);
-                SqlCommand cmd1 = new SqlCommand(sql, con);
-                cmd1.ExecuteNonQuery();
-                */
             }
 
             //Showdata();
 
             comboBox1.Text = "";
-            label15.Text = "";
             textBox1.Text = "";
         }
 
@@ -116,17 +69,37 @@ namespace LGD
         //二.删除按钮
         private void button3_Click(object sender, EventArgs e)
         {
-            string coct = "Data Source=192.168.1.252;Initial Catalog=cs管理;Persist Security Info=True;User ID=sa;Password=WFGLServer2008";
-            SqlConnection con = new SqlConnection(coct);
-            con.Open();
-            string myupdate = "delete from [additional] where guid='" + label4.Text + "' ";
+            if (DateTime.Compare( Convert.ToDateTime(label17.Text), Convert.ToDateTime(label16.Text )) >= 0) //Convert.ToDateTime( dataGridView1.SelectedCells[0].Value.ToString() );
+            {
+                MessageBox.Show("只允许删除当月数据！");
+            }
+            else
+            {
+                if (MessageBox.Show("确认删除吗？", "确认", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
 
-            SqlCommand cmd = new SqlCommand(myupdate, con);
+                    string coct = "Data Source=192.168.1.252;Initial Catalog=cs管理;Persist Security Info=True;User ID=sa;Password=WFGLServer2008";
+                    SqlConnection con = new SqlConnection(coct);
+                    con.Open();
+                    string myupdate = "delete from [additional] where guid='" + label4.Text + "' ";
 
-            cmd.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand(myupdate, con);
 
-            MessageBox.Show("删除完成！");
-            //Showdata();
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("删除完成！");
+                    //Showdata();
+                    //重新执行dgrid1查询
+                    button7_Click_1(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("取消！");
+                }
+            }
+
+
+
         }
 
 
@@ -156,7 +129,6 @@ namespace LGD
             //Showdata();
             textBox1.Text = "";
             comboBox1.Text = "";
-            label15.Text = "";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -167,6 +139,8 @@ namespace LGD
             //label8.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             //label3.Text = dataGridView1.SelectedCells[0].Value.ToString();
             label4.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            label16.Text = dataGridView1.SelectedCells[3].Value.ToString();
+                //Convert.ToDateTime( dataGridView1.SelectedCells[0].Value.ToString() );
 
 
 
@@ -194,6 +168,8 @@ namespace LGD
             this.Close();//关闭第一个窗口
         }
 
+
+        //查询全部
         private void button7_Click_1(object sender, EventArgs e)
         {
             //private void Showdata()
@@ -204,7 +180,9 @@ namespace LGD
                 con.Open();
 
                 string sql = "select [guid],[owner],[actdispdate],[theodispdate],[project],[item],[userid],[name],[manhours],[stsala],[sala] from additional " +
-                             "WHERE rtrim(ltrim([owner]))=rtrim(ltrim('" + label3.Text + "')) ";
+                             "WHERE rtrim(ltrim([owner]))=rtrim(ltrim('" + label3.Text + "')) " +
+                             "and (  [theodispdate]>= '" + label18.Text + "'+' '+'00:00:01' " +
+                             "and[theodispdate] <= '" + label19.Text + "' + ' ' + '23:59:01' ) ";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
@@ -224,6 +202,7 @@ namespace LGD
 
                 this.dataGridView1.DataSource = ds.Tables[0].DefaultView;
 
+
         }
 
 
@@ -234,6 +213,19 @@ namespace LGD
             button9.Visible = false;
             timer1.Interval = 1000;
             timer1.Start();
+
+            label3.Text = UserInfo.UserName;//引用全局变量username，默认加载时填写
+
+            //开始就将dateTimePicker1加入textBox1，防止录入人员不选
+            textBox1.Text = dateTimePicker1.Value.ToString();
+
+            //dateTimePicker3设置为当前月的第一天
+            dateTimePicker3.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            dateTimePicker5.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+
+            label17.Text= dateTimePicker5.Value.ToString("yyyy-MM-dd HH:mm:ss");//当月第一天转换格式
+            label18.Text = dateTimePicker3.Value.ToString("yyyy-MM-dd");//当月第一天转换格式
+            label19.Text = dateTimePicker4.Value.ToString("yyyy-MM-dd");//当月第一天转换格式
             //首先显示所属数据
             button7_Click_1(sender, e);
         }
@@ -249,15 +241,20 @@ namespace LGD
 
         private void button8_Click(object sender, EventArgs e)
         {
+
             dataGridView2.Visible = true;
             button9.Visible = true;
+            //去除行列标题
+            dataGridView2.RowHeadersVisible = false;
+            dataGridView2.ColumnHeadersVisible = false;
 
             string coct = "Data Source=192.168.1.252;Initial Catalog=cs管理;Persist Security Info=True;User ID=sa;Password=WFGLServer2008";
             SqlConnection con = new SqlConnection(coct);
             con.Open();
 
             string sql = "select [用户名],[name] from 登录表 " +
-                         "WHERE rtrim(ltrim([用户名])) like '%" + textBox3.Text + "%' or rtrim(ltrim([name])) like '%" + textBox3.Text + "%' ";
+                         "WHERE ( rtrim(ltrim([用户名])) like '%" + textBox3.Text + "%' or rtrim(ltrim([name])) like '%" + textBox3.Text + "%' ) " +
+                         "and rtrim(ltrim([用户名])) not like 'v%' ";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
@@ -296,17 +293,18 @@ namespace LGD
             //dateTimePicker1.Text = textBox1.Text;
             textBox1.Text = dateTimePicker1.Value.ToString();
         }
-
-
-
-
-        /*
-        private void button5_Click(object sender, EventArgs e)//跳转考勤页面并传值ID
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
-           考勤情况 f2 = new 考勤情况(dataGridView1.SelectedCells[0].Value.ToString());
-           f2.ShowDialog();
+            //dateTimePicker1.Text = textBox1.Text;
+            label18.Text = dateTimePicker3.Value.ToString("yyyy-MM-dd");//当月第一天转换格式
         }
-        */
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            //dateTimePicker1.Text = textBox1.Text;
+            label19.Text = dateTimePicker2.Value.ToString("yyyy-MM-dd");//当月第一天转换格式
+        }
+
+
 
     }
 }
