@@ -14,7 +14,7 @@ namespace LGD
 {
     public partial class Login : Form
     {
-        private int errorTime = 3;
+        private int errorTime = 10;
 
         public Login() {
             InitializeComponent();
@@ -59,13 +59,13 @@ namespace LGD
                     textCheck.Text = "";
                 }
             } else
-                if (errorTime < 3) {
+                if (errorTime < 10) {
                     MessageBox.Show("用户名或密码有错。请重新输入！还有" + errorTime.ToString() + "次机会");
                     txtName.Text = "";   //清空账号
                     txtPwd.Text = "";    //清空密码?
                     txtName.Focus();     //光标设置在账号上
                 } else {
-                    MessageBox.Show("你输入的用户名或密码已达三次? 将退出程序");
+                    MessageBox.Show("你输入的用户名或密码已达10次? 将退出程序");
                     this.Close();
                 }
 
